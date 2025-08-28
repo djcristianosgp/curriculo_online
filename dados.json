@@ -6,9 +6,9 @@
 		"telefone": "(27) 99999-2823",
 		"email": "dicristiano.sqp@hotmail.com",
 		"linkedin": "https://www.linkedin.com/in/cristiano-groberio",
-		"github": "https://github.com/seu-usuario-aqui"
+		"github": "https://github.com/djcristianosgp"
 	},
-	"sobre": "Uma breve descrição sobre você, sua paixão por tecnologia e seus objetivos de carreira. Por exemplo: 'Desenvolvedor de software apaixonado por criar soluções robustas e eficientes. Com experiência em C#, .NET e um forte interesse em Inteligência de Negócios, busco sempre aprimorar minhas habilidades e contribuir para projetos inovadores.'",
+	"sobre": "Desenvolvedor de software apaixonado por criar soluções robustas e eficientes. Com experiência em C#, .NET e um forte interesse em Inteligência de Negócios, busco sempre aprimorar minhas habilidades e contribuir para projetos inovadores.",
 	"conhecimentos": [
 		"C#",
 		"Asp Net MVC",
@@ -23,16 +23,16 @@
 	],
 	"projetos": [
 		{
-			"titulo": "Título do Projeto 1",
-			"descricao": "Uma descrição concisa do projeto. O que ele faz, as tecnologias usadas e qual problema ele resolveu.",
-			"link_github": "https://github.com/seu-usuario-aqui/nome-do-projeto-1",
-			"link_demo": "https://link-para-a-demo-do-projeto-1.com"
+			"titulo": "Modal de Help",
+			"descricao": "Um modal para ser acoplado em telas, onde será possível colocar explicações em vídeos, áudios e e textos. Além dias é possível exibir as atualizações que a tela sofreu com o tempo e um canal de feedback para o ussuário sugerir melhorias.",
+			"link_github": "https://github.com/djcristianosgp/modelo_modal_helper",
+			"link_demo": "https://modelo-modal-helper.vercel.app/"
 		},
 		{
-			"titulo": "Título do Projeto 2",
-			"descricao": "Outra descrição de um projeto pessoal. Pode ser algo pequeno, mas que demonstre suas habilidades.",
-			"link_github": "https://github.com/seu-usuario-aqui/nome-do-projeto-2",
-			"link_demo": "https://link-para-a-demo-do-projeto-2.com"
+			"titulo": "Game Pedra, Papel e Tesoura",
+			"descricao": "Um projeto de batalha entre os 3 elementos.",
+			"link_github": "https://github.com/djcristianosgp/gamer",
+			"link_demo": "https://gamer-ruddy.vercel.app/"
 		}
 	],
 	"cursos_extras": [
@@ -119,4 +119,5 @@
 			"descricao": ""
 		}
 	]
+
 }
