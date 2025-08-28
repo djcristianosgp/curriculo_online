@@ -1,7 +1,7 @@
 {
 	"nome": "Cristiano Grobério",
 	"cargo": "Desenvolvedor de Software",
-	"localizacao": "São Gabriel da Palha, Espírito Santo, Brasil",
+	"localizacao": "São Gabriel da Palha, Espírito Santo, Brasil.",
 	"contatos": {
 		"telefone": "(27) 99999-2823",
 		"email": "dicristiano.sqp@hotmail.com",
@@ -16,7 +16,7 @@
 		"DevExpress",
 		"Git",
 		"Selenium",
-		"Sql Server",
+		"SQL Server",
 		"PostgreSQL",
 		"Firebird",
 		".Net Maui"
@@ -24,7 +24,7 @@
 	"projetos": [
 		{
 			"titulo": "Modal de Help",
-			"descricao": "Um modal para ser acoplado em telas, onde será possível colocar explicações em vídeos, áudios e e textos. Além dias é possível exibir as atualizações que a tela sofreu com o tempo e um canal de feedback para o ussuário sugerir melhorias.",
+			"descricao": "Um modal para ser acoplado em telas, em que é possível colocar explicações em vídeos, áudios e textos. Além disso é possível exibir as atualizações que a tela sofreu com o tempo e um canal de feedback para o usuário sugerir melhorias.",
 			"link_github": "https://github.com/djcristianosgp/modelo_modal_helper",
 			"link_demo": "https://modelo-modal-helper.vercel.app/"
 		},
@@ -49,7 +49,7 @@
 			"cargo": "Desenvolvedor de software",
 			"empresa": "RG System Tecnologia em Software",
 			"periodo": "jul de 2022 - o momento",
-			"duracao": "3 anos 2 meses",
+			"duracao": "3 anos e 2 meses",
 			"local": "São Gabriel da Palha, Espírito Santo, Brasil",
 			"competencias": "Inteligência de negócios (BI), Relatórios e análises, C#, DevExpress",
 			"descricao": "Detalhe suas responsabilidades e realizações mais importantes nesta posição."
@@ -58,7 +58,7 @@
 			"cargo": "Analista de suporte",
 			"empresa": "RG System Tecnologia em Software",
 			"periodo": "nov de 2020 - jul de 2022",
-			"duracao": "1 ano 9 meses",
+			"duracao": "1 ano e 9 meses",
 			"local": "São Gabriel da Palha, Espírito Santo, Brasil",
 			"descricao": ""
 		},
@@ -82,7 +82,7 @@
 			"cargo": "Empresário",
 			"empresa": "Atual Sistemas Franquia Pancas",
 			"periodo": "jun de 2011 - abr de 2017",
-			"duracao": "5 anos 11 meses",
+			"duracao": "5 anos e 11 meses",
 			"local": "Pancas, Espírito Santo, Brasil",
 			"descricao": ""
 		},
@@ -90,7 +90,7 @@
 			"cargo": "Consultor Técnico",
 			"empresa": "Atual Sistemas",
 			"periodo": "ago de 2009 - mai de 2011",
-			"duracao": "1 ano 10 meses",
+			"duracao": "1 ano e 10 meses",
 			"local": "São Gabriel da Palha, Espírito Santo, Brasil",
 			"descricao": ""
 		},
@@ -98,7 +98,7 @@
 			"cargo": "Consultor em Informática",
 			"empresa": "Objetiva Soluções",
 			"periodo": "mar de 2008 - jun de 2009",
-			"duracao": "1 ano 4 meses",
+			"duracao": "1 ano e 4 meses",
 			"local": "São Gabriel da Palha, Espirito Santo, Brasil",
 			"descricao": ""
 		},
@@ -106,7 +106,7 @@
 			"cargo": "Vendedor / Escritório",
 			"empresa": "Peg-Pag",
 			"periodo": "jan de 2007 - mar de 2008",
-			"duracao": "1 ano 3 meses",
+			"duracao": "1 ano e 3 meses",
 			"local": "São Gabriel da Palha, Espírito Santo, Brasil",
 			"descricao": ""
 		},
@@ -121,3 +121,4 @@
 	]
 
 }
+
