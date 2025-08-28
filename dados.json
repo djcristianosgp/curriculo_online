@@ -1,0 +1,122 @@
+{
+	"nome": "Cristiano Grobério",
+	"cargo": "Desenvolvedor de Software",
+	"localizacao": "São Gabriel da Palha, Espírito Santo, Brasil",
+	"contatos": {
+		"telefone": "(27) 99999-2823",
+		"email": "dicristiano.sqp@hotmail.com",
+		"linkedin": "https://www.linkedin.com/in/cristiano-groberio",
+		"github": "https://github.com/seu-usuario-aqui"
+	},
+	"sobre": "Uma breve descrição sobre você, sua paixão por tecnologia e seus objetivos de carreira. Por exemplo: 'Desenvolvedor de software apaixonado por criar soluções robustas e eficientes. Com experiência em C#, .NET e um forte interesse em Inteligência de Negócios, busco sempre aprimorar minhas habilidades e contribuir para projetos inovadores.'",
+	"conhecimentos": [
+		"C#",
+		"Asp Net MVC",
+		".Net 6",
+		"DevExpress",
+		"Git",
+		"Selenium",
+		"Sql Server",
+		"PostgreSQL",
+		"Firebird",
+		".Net Maui"
+	],
+	"projetos": [
+		{
+			"titulo": "Título do Projeto 1",
+			"descricao": "Uma descrição concisa do projeto. O que ele faz, as tecnologias usadas e qual problema ele resolveu.",
+			"link_github": "https://github.com/seu-usuario-aqui/nome-do-projeto-1",
+			"link_demo": "https://link-para-a-demo-do-projeto-1.com"
+		},
+		{
+			"titulo": "Título do Projeto 2",
+			"descricao": "Outra descrição de um projeto pessoal. Pode ser algo pequeno, mas que demonstre suas habilidades.",
+			"link_github": "https://github.com/seu-usuario-aqui/nome-do-projeto-2",
+			"link_demo": "https://link-para-a-demo-do-projeto-2.com"
+		}
+	],
+	"cursos_extras": [
+		".NET MAUI - Crie Apps para Android, iOS, Mac e Windows",
+		"Curso de ASP.NET Core MVC - Criando um Site do Zero (NET 6)",
+		"Animação de Logo Profissional - iniciante ao avançado",
+		"Acelerador de Carreira com Power BI",
+		"Edição de Vídeos no DaVinci Resolve 16 para Iniciantes",
+		"Xamarin 2016 - Desenvolvimento para Android, iOS e WP",
+		"Testes funcionais com Selenium WebDriver: Do básico ao GRID"
+	],
+	"experiencias_profissionais": [
+		{
+			"cargo": "Desenvolvedor de software",
+			"empresa": "RG System Tecnologia em Software",
+			"periodo": "jul de 2022 - o momento",
+			"duracao": "3 anos 2 meses",
+			"local": "São Gabriel da Palha, Espírito Santo, Brasil",
+			"competencias": "Inteligência de negócios (BI), Relatórios e análises, C#, DevExpress",
+			"descricao": "Detalhe suas responsabilidades e realizações mais importantes nesta posição."
+		},
+		{
+			"cargo": "Analista de suporte",
+			"empresa": "RG System Tecnologia em Software",
+			"periodo": "nov de 2020 - jul de 2022",
+			"duracao": "1 ano 9 meses",
+			"local": "São Gabriel da Palha, Espírito Santo, Brasil",
+			"descricao": ""
+		},
+		{
+			"cargo": "Supervisor de controle de qualidade",
+			"empresa": "Atual Sistemas",
+			"periodo": "mar de 2020 - nov de 2020",
+			"duracao": "9 meses",
+			"local": "São Gabriel da Palha, Espírito Santo, Brasil",
+			"descricao": ""
+		},
+		{
+			"cargo": "Software Tester",
+			"empresa": "Atual Sistemas",
+			"periodo": "abr de 2017 - mar de 2020",
+			"duracao": "3 anos",
+			"local": "São Gabriel da Palha, Espírito Santo, Brasil",
+			"descricao": ""
+		},
+		{
+			"cargo": "Empresário",
+			"empresa": "Atual Sistemas Franquia Pancas",
+			"periodo": "jun de 2011 - abr de 2017",
+			"duracao": "5 anos 11 meses",
+			"local": "Pancas, Espírito Santo, Brasil",
+			"descricao": ""
+		},
+		{
+			"cargo": "Consultor Técnico",
+			"empresa": "Atual Sistemas",
+			"periodo": "ago de 2009 - mai de 2011",
+			"duracao": "1 ano 10 meses",
+			"local": "São Gabriel da Palha, Espírito Santo, Brasil",
+			"descricao": ""
+		},
+		{
+			"cargo": "Consultor em Informática",
+			"empresa": "Objetiva Soluções",
+			"periodo": "mar de 2008 - jun de 2009",
+			"duracao": "1 ano 4 meses",
+			"local": "São Gabriel da Palha, Espirito Santo, Brasil",
+			"descricao": ""
+		},
+		{
+			"cargo": "Vendedor / Escritório",
+			"empresa": "Peg-Pag",
+			"periodo": "jan de 2007 - mar de 2008",
+			"duracao": "1 ano 3 meses",
+			"local": "São Gabriel da Palha, Espírito Santo, Brasil",
+			"descricao": ""
+		},
+		{
+			"cargo": "Estágio COEP",
+			"empresa": "Caixa Economica Federal",
+			"periodo": "jan de 2005 - dez de 2006",
+			"duracao": "2 anos",
+			"local": "São Gabriel da Palha, Espírito Santo, Brasil",
+			"descricao": ""
+		}
+	]
+}

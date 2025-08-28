@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristiano Grobério - Desenvolvedor de Software</title>
+    <!-- Inclui a fonte Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- Inclui o Tailwind CSS para estilização -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a1a2e; /* Fundo escuro */
+            color: #e4e4e7; /* Texto claro */
+        }
+        .container-bg {
+            background-color: #162447; /* Fundo da seção principal */
+        }
+        .title {
+            color: #b7c0d2; /* Cor para títulos */
+            font-weight: 800; /* Extra bold */
+        }
+        .subtitle {
+            color: #b7c0d2;
+        }
+        .highlight {
+            color: #ff9a8d; /* Cor de destaque */
+        }
+        .section-header {
+            color: #ff9a8d;
+        }
+        .skill-tag {
+            background-color: #384c7e;
+            color: #d1e5ff;
+            border-radius: 9999px;
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+            padding-top: 0.25rem;
+            padding-bottom: 0.25rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        /* Efeito de hover para os links */
+        a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8 md:p-12 lg:p-20">
+    <!-- Container principal que será preenchido pelo JavaScript -->
+    <div id="portfolio-container" class="max-w-4xl mx-auto container-bg rounded-2xl shadow-2xl overflow-hidden p-8 sm:p-10 lg:p-16">
+        <!-- O conteúdo será injetado aqui pelo JavaScript -->
+    </div>
+
+   <script>
+    // Função para renderizar o currículo com base nos dados JSON
+    function renderPortfolio(data) {
+        const container = document.getElementById('portfolio-container');
+        if (!container) return;
+
+        let htmlContent = `
+            <!-- Cabeçalho -->
+            <header class="text-center mb-10 sm:mb-16">
+                <p class="text-lg sm:text-xl font-medium subtitle mb-1">Olá, eu sou</p>
+                <h1 class="text-5xl sm:text-6xl font-extrabold text-white mb-4 leading-tight">${data.nome}</h1>
+                <p class="text-2xl sm:text-3xl font-bold highlight mb-6">${data.cargo}</p>
+                <div class="flex flex-wrap justify-center gap-6 text-sm sm:text-base text-gray-400">
+                    <a href="tel:${data.contatos.telefone.replace(/\D/g, '')}" class="flex items-center gap-2 hover:text-white transition-colors duration-300">
+                        ${data.contatos.telefone}
+                    </a>
+                    <a href="mailto:${data.contatos.email}" class="flex items-center gap-2 hover:text-white transition-colors duration-300">
+                        ${data.contatos.email}
+                    </a>
+                    <a href="${data.contatos.linkedin}" target="_blank">LinkedIn</a>
+                    <a href="${data.contatos.github}" target="_blank">GitHub</a>
+                    <span>${data.localizacao}</span>
+                </div>
+            </header>
+
+            <!-- Sobre Mim -->
+            ${data.sobre ? `<section class="mb-8"><h2 class="text-3xl font-extrabold section-header mb-6">Sobre Mim</h2><p class="text-gray-300 leading-relaxed">${data.sobre}</p></section>` : ''}
+
+            <!-- Conhecimentos -->
+            ${data.conhecimentos.length > 0 ? `<section class="mb-8"><h2 class="text-3xl font-extrabold section-header mb-6">Conhecimentos</h2><div class="flex flex-wrap gap-2">${data.conhecimentos.map(skill => `<span class="skill-tag">${skill}</span>`).join('')}</div></section>` : ''}
+
+            <!-- Projetos -->
+            ${data.projetos.length > 0 ? `<section class="mb-8"><h2 class="text-3xl font-extrabold section-header mb-6">Projetos Pessoais</h2><div class="space-y-6">${data.projetos.map(projeto => `<div><h3 class="text-xl font-bold text-white mb-1">${projeto.titulo}</h3><p class="text-gray-400 mb-2">${projeto.descricao}</p><div class="flex gap-4 text-sm font-medium"><a href="${projeto.link_github}" target="_blank" class="text-highlight hover:underline">GitHub</a>${projeto.link_demo ? `<a href="${projeto.link_demo}" target="_blank" class="text-highlight hover:underline">Ver Demo</a>` : ''}</div></div>`).join('')}</div></section>` : ''}
+
+            <!-- Cursos Extras -->
+            ${data.cursos_extras.length > 0 ? `<section class="mb-8"><h2 class="text-3xl font-extrabold section-header mb-6">Cursos Extras</h2><ul class="list-disc list-inside space-y-2 text-gray-300">${data.cursos_extras.map(curso => `<li>${curso}</li>`).join('')}</ul></section>` : ''}
+
+            <!-- Experiências -->
+            ${data.experiencias_profissionais.length > 0 ? `<section><h2 class="text-3xl font-extrabold section-header mb-6">Experiências profissionais</h2><div class="space-y-6">${data.experiencias_profissionais.map(exp => `<div><h3 class="text-xl font-bold text-white">${exp.cargo}</h3><p class="text-sm text-gray-400 mb-1">${exp.empresa} | ${exp.periodo} (${exp.duracao})</p><p class="text-sm text-gray-400 mb-2">${exp.local}</p>${exp.descricao ? `<p class="text-gray-300 leading-relaxed">${exp.descricao}</p>` : ''}</div>`).join('')}</div></section>` : ''}
+        `;
+
+        container.innerHTML = htmlContent;
+    }
+
+    // Carregar JSON externo
+    document.addEventListener('DOMContentLoaded', () => {
+        fetch('dados.json')
+            .then(response => response.json())
+            .then(data => renderPortfolio(data))
+            .catch(err => console.error('Erro ao carregar dados.json:', err));
+    });
+</script>
+
+</body>
+</html>
