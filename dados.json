@@ -33,6 +33,63 @@
 			"descricao": "Um projeto de batalha entre os 3 elementos.",
 			"link_github": "https://github.com/djcristianosgp/gamer",
 			"link_demo": "https://gamer-ruddy.vercel.app/"
+		},
+		{
+			"titulo": "Margix",
+			"descricao": "Aplicação web com foco em experiência moderna e navegação fluida.",
+			"link_demo": "https://margix.vercel.app/"
+		},
+		{
+			"titulo": "Atual Etiqueta",
+			"descricao": "Solução para gerenciamento e atualização de etiquetas com interface objetiva.",
+			"link_demo": "https://atual-etiqueta.vercel.app/"
+		},
+		{
+			"titulo": "QuickSetup",
+			"descricao": "Ferramenta para agilizar configurações iniciais e acelerar o onboarding técnico.",
+			"link_demo": "https://quicksetup.vercel.app/"
+		},
+		{
+			"titulo": "8-Bit Legends",
+			"descricao": "Projeto temático com proposta criativa e visual inspirado em jogos retrô.",
+			"link_demo": "https://8-bit-legends.vercel.app/"
+		},
+		{
+			"titulo": "Rock10Replay",
+			"descricao": "Experiência interativa voltada para conteúdo musical e replay de momentos.",
+			"link_demo": "https://rock10replay.vercel.app/"
+		},
+		{
+			"titulo": "Agro ES Connect",
+			"descricao": "Plataforma de conexão para o setor agro, com foco em comunicação e visibilidade.",
+			"link_demo": "https://agro-es-connect.vercel.app/"
+		}
+	],
+	"prototipos": [
+		{
+			"titulo": "Cliente 360",
+			"descricao": "Protótipo de centralização de dados de clientes em uma visão única.",
+			"link_demo": "https://cliente360-ruddy.vercel.app/"
+		},
+		{
+			"titulo": "Easy Condominium Hub",
+			"descricao": "Protótipo para gestão condominial com serviços e comunicação em um só ambiente.",
+			"link_demo": "https://easycondominiumhub.vercel.app/"
+		},
+		{
+			"titulo": "Gov Connect",
+			"descricao": "Protótipo de integração entre serviços públicos e atendimento digital.",
+			"link_demo": "https://gov-connect-five.vercel.app/"
+		},
+		{
+			"titulo": "Service Hub Pro",
+			"descricao": "Protótipo de hub de serviços para organização de demandas e operações.",
+			"link_demo": "https://service-hub-pro.vercel.app/"
+		},
+		{
+			"titulo": "Vitrine Premiada",
+			"descricao": "Protótipo para exposição de campanhas e produtos com mecânica de premiação.",
+			"link_demo": "https://vitrine-premiada.vercel.app/"
 		}
 	],
 	"cursos_extras": [

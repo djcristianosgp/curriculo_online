@@ -5,47 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cristiano Grobério - Desenvolvedor de Software</title>
-    <!-- Inclui a fonte Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
     <!-- Inclui o Tailwind CSS para estilização -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        :root {
+            --bg-1: #f4f1ea;
+            --bg-2: #e9edf5;
+            --ink: #1f2937;
+            --ink-soft: #4b5563;
+            --card: rgba(255, 255, 255, 0.78);
+            --line: rgba(32, 40, 56, 0.12);
+            --accent: #be5a2f;
+            --accent-soft: #f4e4dc;
+            --accent-2: #1f6d76;
+            --chip: #eef3fb;
+        }
+
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: #1a1a2e;
-            /* Fundo escuro */
-            color: #e4e4e7;
-            /* Texto claro */
+            font-family: 'DM Sans', sans-serif;
+            color: var(--ink);
+            min-height: 100vh;
+            background:
+                radial-gradient(circle at 85% 15%, rgba(190, 90, 47, 0.18), transparent 35%),
+                radial-gradient(circle at 10% 25%, rgba(31, 109, 118, 0.14), transparent 32%),
+                linear-gradient(135deg, var(--bg-1) 0%, var(--bg-2) 100%);
         }
 
         .container-bg {
-            background-color: #162447;
-            /* Fundo da seção principal */
+            background: var(--card);
+            border: 1px solid var(--line);
+            backdrop-filter: blur(9px);
         }
 
         .title {
-            color: #b7c0d2;
-            /* Cor para títulos */
+            font-family: 'Sora', sans-serif;
+            color: var(--ink);
             font-weight: 800;
-            /* Extra bold */
         }
 
         .subtitle {
-            color: #b7c0d2;
+            color: var(--ink-soft);
         }
 
         .highlight {
-            color: #ff9a8d;
-            /* Cor de destaque */
+            color: var(--accent);
         }
 
         .section-header {
-            color: #ff9a8d;
+            color: var(--accent-2);
+            font-family: 'Sora', sans-serif;
         }
 
         .skill-tag {
-            background-color: #384c7e;
-            color: #d1e5ff;
+            background-color: var(--chip);
+            color: #2f3c53;
             border-radius: 9999px;
             padding-left: 0.75rem;
             padding-right: 0.75rem;
@@ -53,11 +67,74 @@
             padding-bottom: 0.25rem;
             font-size: 0.875rem;
             font-weight: 500;
+            border: 1px solid rgba(31, 109, 118, 0.18);
         }
 
-        /* Efeito de hover para os links */
-        a:hover {
-            color: #fff;
+        .reveal {
+            opacity: 0;
+            transform: translateY(18px);
+            animation: fade-up 680ms ease forwards;
+        }
+
+        .reveal:nth-child(2) {
+            animation-delay: 90ms;
+        }
+
+        .reveal:nth-child(3) {
+            animation-delay: 150ms;
+        }
+
+        @keyframes fade-up {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .panel {
+            background: rgba(255, 255, 255, 0.74);
+            border: 1px solid var(--line);
+            border-radius: 1rem;
+            padding: 1.2rem;
+        }
+
+        .social-link {
+            border: 1px solid var(--line);
+            background: rgba(255, 255, 255, 0.85);
+            color: var(--ink-soft);
+            transition: all 220ms ease;
+        }
+
+        .social-link:hover {
+            border-color: rgba(31, 109, 118, 0.35);
+            color: var(--ink);
+            transform: translateY(-2px);
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid var(--line);
+            border-radius: 1rem;
+            padding: 1rem;
+            transition: transform 180ms ease, border-color 180ms ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(190, 90, 47, 0.35);
+        }
+
+        .btn-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.875rem;
+            font-weight: 700;
+            color: var(--accent-2);
+        }
+
+        .btn-link:hover {
+            color: var(--accent);
         }
     </style>
 </head>
@@ -75,40 +152,53 @@
             const container = document.getElementById('portfolio-container');
             if (!container) return;
 
+            const renderActionLinks = (item) => {
+                const links = [];
+
+                if (item.link_github) {
+                    links.push(`<a href="${item.link_github}" target="_blank" rel="noopener noreferrer" class="btn-link">GitHub</a>`);
+                }
+
+                if (item.link_demo) {
+                    links.push(`<a href="${item.link_demo}" target="_blank" rel="noopener noreferrer" class="btn-link">Visitar projeto</a>`);
+                }
+
+                return links.length > 0 ? `<div class="flex flex-wrap gap-4 mt-3">${links.join('')}</div>` : '';
+            };
+
             let htmlContent = `
             <!-- Cabeçalho -->
-           <header class="text-center mb-10 sm:mb-16">
-    <img src="photoperfil.jpg" alt="Foto de perfil" class="mx-auto mb-4 w-32 h-32 rounded-full object-cover border-4 border-highlight shadow-lg">
-    <p class="text-lg sm:text-xl font-medium subtitle mb-1">Olá, eu sou</p>
-    <h1 class="text-5xl sm:text-6xl font-extrabold text-white mb-4 leading-tight">${data.nome}</h1>
-    <p class="text-2xl sm:text-3xl font-bold highlight mb-6">${data.cargo}</p>
-    <div class="flex flex-wrap justify-center gap-6 text-sm sm:text-base text-gray-400">
-        <a href="tel:${data.contatos.telefone.replace(/\D/g, '')}" class="flex items-center gap-2 hover:text-white transition-colors duration-300">
-            ${data.contatos.telefone}
-        </a>
-        <a href="mailto:${data.contatos.email}" class="flex items-center gap-2 hover:text-white transition-colors duration-300">
-            ${data.contatos.email}
-        </a>
-        <a href="${data.contatos.linkedin}" target="_blank">LinkedIn</a>
-        <a href="${data.contatos.github}" target="_blank">GitHub</a>
-        <span>${data.localizacao}</span>
-    </div>
-</header>
+            <header class="reveal text-center mb-10 sm:mb-14">
+                <img src="photoperfil.jpg" alt="Foto de perfil" class="mx-auto mb-5 w-32 h-32 rounded-full object-cover border-4 border-white shadow-xl">
+                <p class="text-base sm:text-lg font-medium subtitle mb-1 tracking-wide uppercase">Desenvolvedor de Software</p>
+                <h1 class="title text-4xl sm:text-5xl md:text-6xl mb-4 leading-tight">${data.nome}</h1>
+                <p class="text-xl sm:text-2xl font-bold highlight mb-7">${data.cargo}</p>
+                <div class="flex flex-wrap justify-center gap-3 text-sm sm:text-base">
+                    <a href="tel:${data.contatos.telefone.replace(/\D/g, '')}" class="social-link rounded-full px-4 py-2">${data.contatos.telefone}</a>
+                    <a href="mailto:${data.contatos.email}" class="social-link rounded-full px-4 py-2">${data.contatos.email}</a>
+                    <a href="${data.contatos.linkedin}" target="_blank" rel="noopener noreferrer" class="social-link rounded-full px-4 py-2">LinkedIn</a>
+                    <a href="${data.contatos.github}" target="_blank" rel="noopener noreferrer" class="social-link rounded-full px-4 py-2">GitHub</a>
+                </div>
+                <p class="mt-5 text-sm sm:text-base subtitle">${data.localizacao}</p>
+            </header>
 
             <!-- Sobre Mim -->
-            ${data.sobre ? `<section class="mb-8"><h2 class="text-3xl font-extrabold section-header mb-6">Sobre Mim</h2><p class="text-gray-300 leading-relaxed">${data.sobre}</p></section>` : ''}
+            ${data.sobre ? `<section class="reveal mb-8"><div class="panel"><h2 class="text-2xl sm:text-3xl font-extrabold section-header mb-4">Sobre Mim</h2><p class="text-slate-700 leading-relaxed">${data.sobre}</p></div></section>` : ''}
 
             <!-- Conhecimentos -->
-            ${data.conhecimentos.length > 0 ? `<section class="mb-8"><h2 class="text-3xl font-extrabold section-header mb-6">Conhecimentos</h2><div class="flex flex-wrap gap-2">${data.conhecimentos.map(skill => `<span class="skill-tag">${skill}</span>`).join('')}</div></section>` : ''}
+            ${data.conhecimentos.length > 0 ? `<section class="reveal mb-8"><div class="panel"><h2 class="text-2xl sm:text-3xl font-extrabold section-header mb-5">Conhecimentos</h2><div class="flex flex-wrap gap-2">${data.conhecimentos.map(skill => `<span class="skill-tag">${skill}</span>`).join('')}</div></div></section>` : ''}
 
             <!-- Projetos -->
-            ${data.projetos.length > 0 ? `<section class="mb-8"><h2 class="text-3xl font-extrabold section-header mb-6">Projetos Pessoais</h2><div class="space-y-6">${data.projetos.map(projeto => `<div><h3 class="text-xl font-bold text-white mb-1">${projeto.titulo}</h3><p class="text-gray-400 mb-2">${projeto.descricao}</p><div class="flex gap-4 text-sm font-medium"><a href="${projeto.link_github}" target="_blank" class="text-highlight hover:underline">GitHub</a>${projeto.link_demo ? `<a href="${projeto.link_demo}" target="_blank" class="text-highlight hover:underline">Ver Demo</a>` : ''}</div></div>`).join('')}</div></section>` : ''}
+            ${data.projetos.length > 0 ? `<section class="reveal mb-8"><div class="panel"><h2 class="text-2xl sm:text-3xl font-extrabold section-header mb-5">Projetos Pessoais</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-4">${data.projetos.map(projeto => `<article class="project-card"><h3 class="text-lg font-bold text-slate-800 mb-1">${projeto.titulo}</h3><p class="text-slate-600 mb-2">${projeto.descricao}</p>${renderActionLinks(projeto)}</article>`).join('')}</div></div></section>` : ''}
+
+            <!-- Protótipos -->
+            ${data.prototipos && data.prototipos.length > 0 ? `<section class="reveal mb-8"><div class="panel"><h2 class="text-2xl sm:text-3xl font-extrabold section-header mb-5">Protótipos</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-4">${data.prototipos.map(prototipo => `<article class="project-card"><h3 class="text-lg font-bold text-slate-800 mb-1">${prototipo.titulo}</h3><p class="text-slate-600 mb-2">${prototipo.descricao}</p>${renderActionLinks(prototipo)}</article>`).join('')}</div></div></section>` : ''}
 
             <!-- Cursos Extras -->
-            ${data.cursos_extras.length > 0 ? `<section class="mb-8"><h2 class="text-3xl font-extrabold section-header mb-6">Cursos Extras</h2><ul class="list-disc list-inside space-y-2 text-gray-300">${data.cursos_extras.map(curso => `<li>${curso}</li>`).join('')}</ul></section>` : ''}
+            ${data.cursos_extras.length > 0 ? `<section class="reveal mb-8"><div class="panel"><h2 class="text-2xl sm:text-3xl font-extrabold section-header mb-5">Cursos Extras</h2><ul class="list-disc list-inside space-y-2 text-slate-700">${data.cursos_extras.map(curso => `<li>${curso}</li>`).join('')}</ul></div></section>` : ''}
 
             <!-- Experiências -->
-            ${data.experiencias_profissionais.length > 0 ? `<section><h2 class="text-3xl font-extrabold section-header mb-6">Experiências profissionais</h2><div class="space-y-6">${data.experiencias_profissionais.map(exp => `<div><h3 class="text-xl font-bold text-white">${exp.cargo}</h3><p class="text-sm text-gray-400 mb-1">${exp.empresa} | ${exp.periodo} (${exp.duracao})</p><p class="text-sm text-gray-400 mb-2">${exp.local}</p>${exp.descricao ? `<p class="text-gray-300 leading-relaxed">${exp.descricao}</p>` : ''}</div>`).join('')}</div></section>` : ''}
+            ${data.experiencias_profissionais.length > 0 ? `<section class="reveal"><div class="panel"><h2 class="text-2xl sm:text-3xl font-extrabold section-header mb-5">Experiências Profissionais</h2><div class="space-y-4">${data.experiencias_profissionais.map(exp => `<div class="project-card"><h3 class="text-lg font-bold text-slate-800">${exp.cargo}</h3><p class="text-sm text-slate-500 mb-1">${exp.empresa} | ${exp.periodo} (${exp.duracao})</p><p class="text-sm text-slate-500 mb-2">${exp.local}</p>${exp.descricao ? `<p class="text-slate-700 leading-relaxed">${exp.descricao}</p>` : ''}</div>`).join('')}</div></div></section>` : ''}
         `;
 
             container.innerHTML = htmlContent;
