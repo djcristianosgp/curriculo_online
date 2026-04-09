@@ -5,9 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cristiano Grobério - Desenvolvedor de Software</title>
+        <meta name="description" content="Currículo de Cristiano Grobério — Desenvolvedor de Software .NET com experiência em C#, ASP.NET MVC, DevExpress, SQL Server e React. São Gabriel da Palha, ES, Brasil.">
+        <meta name="author" content="Cristiano Grobério">
+        <meta name="robots" content="index, follow">
+        <!-- Open Graph / LinkedIn / WhatsApp -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Cristiano Grobério — Desenvolvedor de Software">
+        <meta property="og:description" content="Desenvolvedor .NET com experiência em C#, ASP.NET MVC, DevExpress e SQL Server. Confira meus projetos e trajetória profissional.">
+        <meta property="og:image" content="https://curriculo-online-djcristianosgp.vercel.app/photoperfil.jpg">
+        <meta property="og:url" content="https://curriculo-online-djcristianosgp.vercel.app/">
+        <meta property="og:locale" content="pt_BR">
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Cristiano Grobério — Desenvolvedor de Software">
+        <meta name="twitter:description" content="Desenvolvedor .NET com experiência em C#, ASP.NET MVC, DevExpress e SQL Server.">
+        <meta name="twitter:image" content="https://curriculo-online-djcristianosgp.vercel.app/photoperfil.jpg">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
-    <!-- Inclui o Tailwind CSS para estilização -->
-    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         :root {
             --bg-1: #f4f1ea;
@@ -26,10 +39,249 @@
             font-family: 'DM Sans', sans-serif;
             color: var(--ink);
             min-height: 100vh;
+            margin: 0;
             background:
                 radial-gradient(circle at 85% 15%, rgba(190, 90, 47, 0.18), transparent 35%),
                 radial-gradient(circle at 10% 25%, rgba(31, 109, 118, 0.14), transparent 32%),
                 linear-gradient(135deg, var(--bg-1) 0%, var(--bg-2) 100%);
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        .page-shell {
+            padding: 1rem;
+        }
+
+        .portfolio-shell {
+            max-width: 64rem;
+            margin: 0 auto;
+            border-radius: 1rem;
+            box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25);
+            overflow: hidden;
+            padding: 2rem;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .mb-10 {
+            margin-bottom: 2.5rem;
+        }
+
+        .mb-8 {
+            margin-bottom: 2rem;
+        }
+
+        .mb-7 {
+            margin-bottom: 1.75rem;
+        }
+
+        .mb-5 {
+            margin-bottom: 1.25rem;
+        }
+
+        .mb-4 {
+            margin-bottom: 1rem;
+        }
+
+        .mb-2 {
+            margin-bottom: 0.5rem;
+        }
+
+        .mb-1 {
+            margin-bottom: 0.25rem;
+        }
+
+        .mt-5 {
+            margin-top: 1.25rem;
+        }
+
+        .mt-3 {
+            margin-top: 0.75rem;
+        }
+
+        .mt-1 {
+            margin-top: 0.25rem;
+        }
+
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .inline-flex {
+            display: inline-flex;
+        }
+
+        .inline-block {
+            display: inline-block;
+        }
+
+        .grid {
+            display: grid;
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .gap-4 {
+            gap: 1rem;
+        }
+
+        .gap-3 {
+            gap: 0.75rem;
+        }
+
+        .gap-2 {
+            gap: 0.5rem;
+        }
+
+        .space-y-4 > * + * {
+            margin-top: 1rem;
+        }
+
+        .space-y-3 > * + * {
+            margin-top: 0.75rem;
+        }
+
+        .space-y-2 > * + * {
+            margin-top: 0.5rem;
+        }
+
+        .grid-cols-1 {
+            grid-template-columns: 1fr;
+        }
+
+        .rounded-full {
+            border-radius: 9999px;
+        }
+
+        .rounded-2xl {
+            border-radius: 1rem;
+        }
+
+        .w-32 {
+            width: 8rem;
+        }
+
+        .h-32 {
+            height: 8rem;
+        }
+
+        .object-cover {
+            object-fit: cover;
+        }
+
+        .border-4 {
+            border-width: 4px;
+            border-style: solid;
+            border-color: #ffffff;
+        }
+
+        .shadow-xl {
+            box-shadow: 0 20px 30px rgba(15, 23, 42, 0.18);
+        }
+
+        .overflow-hidden {
+            overflow: hidden;
+        }
+
+        .p-4 {
+            padding: 1rem;
+        }
+
+        .px-4 {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .py-2 {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .text-xs {
+            font-size: 0.75rem;
+        }
+
+        .text-sm {
+            font-size: 0.875rem;
+        }
+
+        .text-base {
+            font-size: 1rem;
+        }
+
+        .text-lg {
+            font-size: 1.125rem;
+        }
+
+        .text-xl {
+            font-size: 1.25rem;
+        }
+
+        .text-2xl {
+            font-size: 1.5rem;
+        }
+
+        .text-4xl {
+            font-size: 2.25rem;
+        }
+
+        .font-bold {
+            font-weight: 700;
+        }
+
+        .font-extrabold {
+            font-weight: 800;
+        }
+
+        .leading-tight {
+            line-height: 1.1;
+        }
+
+        .leading-relaxed {
+            line-height: 1.75;
+        }
+
+        .text-slate-800 {
+            color: #1e293b;
+        }
+
+        .text-slate-700 {
+            color: #334155;
+        }
+
+        .text-slate-600 {
+            color: #475569;
+        }
+
+        .text-slate-500 {
+            color: #64748b;
+        }
+
+        .list-disc {
+            list-style-type: disc;
+        }
+
+        .list-inside {
+            padding-left: 1.25rem;
         }
 
         .container-bg {
@@ -136,31 +388,94 @@
         .btn-link:hover {
             color: var(--accent);
         }
+
+        @media (min-width: 640px) {
+            .page-shell {
+                padding: 2rem;
+            }
+
+            .portfolio-shell {
+                padding: 2.5rem;
+            }
+
+            .sm\:mb-14 {
+                margin-bottom: 3.5rem;
+            }
+
+            .sm\:text-base {
+                font-size: 1rem;
+            }
+
+            .sm\:text-2xl {
+                font-size: 1.5rem;
+            }
+
+            .sm\:text-3xl {
+                font-size: 1.875rem;
+            }
+
+            .sm\:text-5xl {
+                font-size: 3rem;
+            }
+
+            .sm\:p-10 {
+                padding: 2.5rem;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .md\:text-6xl {
+                font-size: 3.75rem;
+            }
+
+            .md\:grid-cols-2 {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .page-shell {
+                padding: 5rem;
+            }
+
+            .lg\:p-16 {
+                padding: 4rem;
+            }
+        }
     </style>
 </head>
 
-<body class="p-4 sm:p-8 md:p-12 lg:p-20">
+<body class="page-shell">
     <!-- Container principal que será preenchido pelo JavaScript -->
     <div id="portfolio-container"
-        class="max-w-4xl mx-auto container-bg rounded-2xl shadow-2xl overflow-hidden p-8 sm:p-10 lg:p-16">
+        class="portfolio-shell container-bg rounded-2xl overflow-hidden sm:p-10 lg:p-16">
         <!-- O conteúdo será injetado aqui pelo JavaScript -->
     </div>
 
+    <script src="dados.js"></script>
     <script>
         // Função para renderizar o currículo com base nos dados JSON
         function renderPortfolio(data) {
             const container = document.getElementById('portfolio-container');
             if (!container) return;
 
+            // Escape de HTML para previnir XSS ao injetar dados externos via innerHTML
+            const esc = (str) => String(str ?? '')
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+
             const renderActionLinks = (item) => {
                 const links = [];
 
                 if (item.link_github) {
-                    links.push(`<a href="${item.link_github}" target="_blank" rel="noopener noreferrer" class="btn-link">GitHub</a>`);
+                    links.push(`<a href="${esc(item.link_github)}" target="_blank" rel="noopener noreferrer" class="btn-link">GitHub</a>`);
                 }
 
                 if (item.link_demo) {
-                    links.push(`<a href="${item.link_demo}" target="_blank" rel="noopener noreferrer" class="btn-link">Visitar projeto</a>`);
+                    links.push(`<a href="${esc(item.link_demo)}" target="_blank" rel="noopener noreferrer" class="btn-link">Visitar projeto</a>`);
                 }
 
                 return links.length > 0 ? `<div class="flex flex-wrap gap-4 mt-3">${links.join('')}</div>` : '';
@@ -169,46 +484,50 @@
             let htmlContent = `
             <!-- Cabeçalho -->
             <header class="reveal text-center mb-10 sm:mb-14">
-                <img src="photoperfil.jpg" alt="Foto de perfil" class="mx-auto mb-5 w-32 h-32 rounded-full object-cover border-4 border-white shadow-xl">                
-                <h1 class="title text-4xl sm:text-5xl md:text-6xl mb-4 leading-tight">${data.nome}</h1>
-                <p class="text-xl sm:text-2xl font-bold highlight mb-7">${data.cargo}</p>
+                <img src="photoperfil.jpg" alt="Foto de perfil" class="mx-auto mb-5 w-32 h-32 rounded-full object-cover border-4 border-white shadow-xl">
+                <h1 class="title text-4xl sm:text-5xl md:text-6xl mb-4 leading-tight">${esc(data.nome)}</h1>
+                <p class="text-xl sm:text-2xl font-bold highlight mb-7">${esc(data.cargo)}</p>
                 <div class="flex flex-wrap justify-center gap-3 text-sm sm:text-base">
-                    <a href="tel:${data.contatos.telefone.replace(/\D/g, '')}" class="social-link rounded-full px-4 py-2">${data.contatos.telefone}</a>
-                    <a href="mailto:${data.contatos.email}" class="social-link rounded-full px-4 py-2">${data.contatos.email}</a>
-                    <a href="${data.contatos.linkedin}" target="_blank" rel="noopener noreferrer" class="social-link rounded-full px-4 py-2">LinkedIn</a>
-                    <a href="${data.contatos.github}" target="_blank" rel="noopener noreferrer" class="social-link rounded-full px-4 py-2">GitHub</a>
+                    <a href="tel:${esc(data.contatos.telefone.replace(/\D/g, ''))}" class="social-link rounded-full px-4 py-2">${esc(data.contatos.telefone)}</a>
+                    <a href="mailto:${esc(data.contatos.email)}" class="social-link rounded-full px-4 py-2">${esc(data.contatos.email)}</a>
+                    <a href="${esc(data.contatos.linkedin)}" target="_blank" rel="noopener noreferrer" class="social-link rounded-full px-4 py-2">LinkedIn</a>
+                    <a href="${esc(data.contatos.github)}" target="_blank" rel="noopener noreferrer" class="social-link rounded-full px-4 py-2">GitHub</a>
                 </div>
-                <p class="mt-5 text-sm sm:text-base subtitle">${data.localizacao}</p>
+                <p class="mt-5 text-sm sm:text-base subtitle">${esc(data.localizacao)}</p>
             </header>
 
             <!-- Sobre Mim -->
-            ${data.sobre ? `<section class="reveal mb-8"><div class="panel"><h2 class="text-2xl sm:text-3xl font-extrabold section-header mb-4">Sobre Mim</h2><p class="text-slate-700 leading-relaxed">${data.sobre}</p></div></section>` : ''}
+            ${data.sobre ? `<section class="reveal mb-8"><div class="panel"><h2 class="text-2xl sm:text-3xl font-extrabold section-header mb-4">Sobre Mim</h2><p class="text-slate-700 leading-relaxed">${esc(data.sobre)}</p></div></section>` : ''}
 
             <!-- Conhecimentos -->
-            ${data.conhecimentos.length > 0 ? `<section class="reveal mb-8"><div class="panel"><h2 class="text-2xl sm:text-3xl font-extrabold section-header mb-5">Conhecimentos</h2><div class="flex flex-wrap gap-2">${data.conhecimentos.map(skill => `<span class="skill-tag">${skill}</span>`).join('')}</div></div></section>` : ''}
+            ${data.conhecimentos.length > 0 ? `<section class="reveal mb-8"><div class="panel"><h2 class="text-2xl sm:text-3xl font-extrabold section-header mb-5">Conhecimentos</h2><div class="flex flex-wrap gap-2">${data.conhecimentos.map(skill => `<span class="skill-tag">${esc(skill)}</span>`).join('')}</div></div></section>` : ''}
 
             <!-- Projetos -->
-            ${data.projetos.length > 0 ? `<section class="reveal mb-8"><div class="panel"><h2 class="text-2xl sm:text-3xl font-extrabold section-header mb-5">Projetos Pessoais</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-4">${data.projetos.map(projeto => `<article class="project-card"><h3 class="text-lg font-bold text-slate-800 mb-1">${projeto.titulo}</h3><p class="text-slate-600 mb-2">${projeto.descricao}</p>${renderActionLinks(projeto)}</article>`).join('')}</div></div></section>` : ''}
+            ${data.projetos.length > 0 ? `<section class="reveal mb-8"><div class="panel"><h2 class="text-2xl sm:text-3xl font-extrabold section-header mb-5">Projetos Pessoais</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-4">${data.projetos.map(projeto => `<article class="project-card"><h3 class="text-lg font-bold text-slate-800 mb-1">${esc(projeto.titulo)}</h3><p class="text-slate-600 mb-2">${esc(projeto.descricao)}</p>${renderActionLinks(projeto)}</article>`).join('')}</div></div></section>` : ''}
 
             <!-- Protótipos -->
-            ${data.prototipos && data.prototipos.length > 0 ? `<section class="reveal mb-8"><div class="panel"><h2 class="text-2xl sm:text-3xl font-extrabold section-header mb-5">Protótipos</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-4">${data.prototipos.map(prototipo => `<article class="project-card"><h3 class="text-lg font-bold text-slate-800 mb-1">${prototipo.titulo}</h3><p class="text-slate-600 mb-2">${prototipo.descricao}</p>${renderActionLinks(prototipo)}</article>`).join('')}</div></div></section>` : ''}
+            ${data.prototipos && data.prototipos.length > 0 ? `<section class="reveal mb-8"><div class="panel"><h2 class="text-2xl sm:text-3xl font-extrabold section-header mb-5">Protótipos</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-4">${data.prototipos.map(prototipo => `<article class="project-card"><h3 class="text-lg font-bold text-slate-800 mb-1">${esc(prototipo.titulo)}</h3><p class="text-slate-600 mb-2">${esc(prototipo.descricao)}</p>${renderActionLinks(prototipo)}</article>`).join('')}</div></div></section>` : ''}
 
             <!-- Cursos Extras -->
-            ${data.cursos_extras.length > 0 ? `<section class="reveal mb-8"><div class="panel"><h2 class="text-2xl sm:text-3xl font-extrabold section-header mb-5">Cursos Extras</h2><ul class="list-disc list-inside space-y-2 text-slate-700">${data.cursos_extras.map(curso => `<li>${curso}</li>`).join('')}</ul></div></section>` : ''}
+            ${data.formacao && data.formacao.length > 0 ? `<section class="reveal mb-8"><div class="panel"><h2 class="text-2xl sm:text-3xl font-extrabold section-header mb-5">Formação Acadêmica</h2><div class="space-y-3">${data.formacao.map(f => `<div class="project-card"><h3 class="text-base font-bold text-slate-800">${esc(f.titulo)}</h3><p class="text-sm text-slate-500">${esc(f.instituicao)} | ${esc(f.periodo)}</p>${f.status ? `<span class="inline-block mt-1 skill-tag text-xs">${esc(f.status)}</span>` : ''}</div>`).join('')}</div></div></section>` : ''}
+
+            <!-- Cursos Extras -->
+            ${data.cursos_extras.length > 0 ? `<section class="reveal mb-8"><div class="panel"><h2 class="text-2xl sm:text-3xl font-extrabold section-header mb-5">Cursos Extras</h2><ul class="list-disc list-inside space-y-2 text-slate-700">${data.cursos_extras.map(curso => `<li>${esc(curso)}</li>`).join('')}</ul></div></section>` : ''}
 
             <!-- Experiências -->
-            ${data.experiencias_profissionais.length > 0 ? `<section class="reveal"><div class="panel"><h2 class="text-2xl sm:text-3xl font-extrabold section-header mb-5">Experiências Profissionais</h2><div class="space-y-4">${data.experiencias_profissionais.map(exp => `<div class="project-card"><h3 class="text-lg font-bold text-slate-800">${exp.cargo}</h3><p class="text-sm text-slate-500 mb-1">${exp.empresa} | ${exp.periodo} (${exp.duracao})</p><p class="text-sm text-slate-500 mb-2">${exp.local}</p>${exp.descricao ? `<p class="text-slate-700 leading-relaxed">${exp.descricao}</p>` : ''}</div>`).join('')}</div></div></section>` : ''}
+            ${data.experiencias_profissionais.length > 0 ? `<section class="reveal"><div class="panel"><h2 class="text-2xl sm:text-3xl font-extrabold section-header mb-5">Experiências Profissionais</h2><div class="space-y-4">${data.experiencias_profissionais.map(exp => `<div class="project-card"><h3 class="text-lg font-bold text-slate-800">${esc(exp.cargo)}</h3><p class="text-sm text-slate-500 mb-1">${esc(exp.empresa)} | ${esc(exp.periodo)} (${esc(exp.duracao)})</p><p class="text-sm text-slate-500 mb-2">${esc(exp.local)}</p>${exp.descricao ? `<p class="text-slate-700 leading-relaxed">${esc(exp.descricao)}</p>` : ''}</div>`).join('')}</div></div></section>` : ''}
         `;
 
             container.innerHTML = htmlContent;
         }
 
-        // Carregar JSON externo
         document.addEventListener('DOMContentLoaded', () => {
-            fetch('dados.json')
-                .then(response => response.json())
-                .then(data => renderPortfolio(data))
-                .catch(err => console.error('Erro ao carregar dados.json:', err));
+            if (window.PORTFOLIO_DATA) {
+                renderPortfolio(window.PORTFOLIO_DATA);
+                return;
+            }
+
+            console.error('Erro ao carregar dados: window.PORTFOLIO_DATA não foi definido em dados.js.');
         });
     </script>
 
