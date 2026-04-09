@@ -10,7 +10,7 @@ const portfolioData = {
   },
   sobre:
     'Desenvolvedor de Software com mais de 3 anos em desenvolvimento .NET e histórico sólido no setor de software ERP. Atuo com C#, ASP.NET MVC, DevExpress e SQL Server na construção e manutenção de sistemas de gestão empresarial. Tenho vivência em todo o ciclo de produto do suporte técnico ao desenvolvimento de features, o que me dá uma visão prática de negócios pouco comum em devs puramente backend. Busco posições onde possa atuar com .NET, Inteligência de Negócios ou desenvolvimento Full Stack.',
-  conhecimentos: ['C#', 'Asp Net MVC', '.Net 6', 'DevExpress', 'Git', 'Selenium', 'SQL Server', 'PostgreSQL', 'Firebird', '.Net Maui', 'React', 'Antigravity', 'Copilot', 'Claude'],
+  conhecimentos: ['C#','.NET (Framework, .NET 6+)','ASP.NET MVC','Windows Forms','.NET MAUI','React','JavaScript','HTML','CSS','APIs REST','Integração com APIs externas','SQL Server','PostgreSQL','Firebird','Modelagem de Banco de Dados','Git','Automação com Selenium','Docker (básico/intermediário)','Arquitetura de Software (boas práticas)','Desenvolvimento de Sistemas Desktop','Desenvolvimento Web Full Stack','DevExpress','Copilot','Claude','Antigravity (ferramentas de IA)'],
   projetos: [
     {
       titulo: 'Modal de Help',
