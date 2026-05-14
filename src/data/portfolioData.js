@@ -9,48 +9,9 @@ const portfolioData = {
     github: 'https://github.com/djcristianosgp',
   },
   sobre:
-    'Desenvolvedor de Software com mais de 3 anos em desenvolvimento .NET e histórico sólido no setor de software ERP. Atuo com C#, ASP.NET MVC, DevExpress e SQL Server na construção e manutenção de sistemas de gestão empresarial. Tenho vivência em todo o ciclo de produto do suporte técnico ao desenvolvimento de features, o que me dá uma visão prática de negócios pouco comum em devs puramente backend. Busco posições onde possa atuar com .NET, Inteligência de Negócios ou desenvolvimento Full Stack.',
+    'Desenvolvedor de Software com mais de 3 anos em desenvolvimento .NET e histórico sólido no setor de software ERP. Atuo com C#, ASP.NET MVC, DevExpress e SQL Server na construção e manutenção de sistemas de gestão empresarial. Tenho vivência em todo o ciclo de produto, do suporte técnico ao desenvolvimento de features, o que me dá uma visão prática de negócios pouco comum em devs puramente backend. Também mantenho projetos em React, TypeScript, automação e produtos com regras de negócio complexas, como NetGrid, iViajei e Winget Wizard. Busco posições onde possa atuar com .NET, Inteligência de Negócios ou desenvolvimento Full Stack.',
   conhecimentos: ['C#','.NET (Framework, .NET 6+)','ASP.NET MVC','Windows Forms','.NET MAUI','React','JavaScript','HTML','CSS','APIs REST','Integração com APIs externas','SQL Server','PostgreSQL','Firebird','Modelagem de Banco de Dados','Git','Automação com Selenium','Docker (básico/intermediário)','Arquitetura de Software (boas práticas)','Desenvolvimento de Sistemas Desktop','Desenvolvimento Web Full Stack','DevExpress','Copilot','Claude','Antigravity (ferramentas de IA)'],
   projetos: [
-    {
-      titulo: 'Modal de Help',
-      descricao:
-        'Componente reutilizável acoplável a qualquer tela, que centraliza documentação em vídeo, áudio e texto, registra histórico de atualizações e oferece canal de feedback ao usuário. Stack: HTML, CSS, JavaScript vanilla.',
-      link_github: 'https://github.com/djcristianosgp/modelo_modal_helper',
-      link_demo: 'https://modelo-modal-helper.vercel.app/',
-    },
-    {
-      titulo: 'Game Pedra, Papel e Tesoura',
-      descricao:
-        'Jogo interativo com lógica de confronto e contagem de pontos. Explorou manipulação de DOM, eventos e lógica condicional com JavaScript puro.',
-      link_github: 'https://github.com/djcristianosgp/gamer',
-      link_demo: 'https://gamer-ruddy.vercel.app/',
-    },
-    {
-      titulo: 'Winget Wizard',
-      descricao:
-        'Ferramenta web para gerar scripts de instalação de pacotes via Windows Package Manager (winget). Stack: React, TypeScript, Vite, Shadcn/UI, Tailwind CSS. Deploy na Vercel com CI via GitHub Actions.',
-      link_github: 'https://github.com/djcristianosgp/winget-wizard',
-      link_demo: 'https://winget-wizard.vercel.app/',
-    },
-    {
-      titulo: 'Margix',
-      descricao:
-        'Dashboard analítico com visualização de margens e indicadores financeiros. Foco em UX com design system próprio, transições fluidas e layout responsivo. Stack: React, Tailwind CSS.',
-      link_demo: 'https://margix.vercel.app/',
-    },
-    {
-      titulo: 'Atual Etiqueta',
-      descricao:
-        'Solução para geração e gerenciamento de etiquetas com impressão direta via browser. Interface objetiva e sem dependências pesadas. Stack: HTML, CSS, JavaScript.',
-      link_demo: 'https://atual-etiqueta.vercel.app/',
-    },
-    {
-      titulo: 'QuickSetup',
-      descricao:
-        'CLI visual para acelerar o onboarding técnico de novos ambientes de desenvolvimento, configurando ferramentas e dependências com um único fluxo. Stack: React, TypeScript.',
-      link_demo: 'https://quicksetup.vercel.app/',
-    },
     {
       titulo: '8-Bit Legends',
       descricao:
@@ -62,6 +23,51 @@ const portfolioData = {
       descricao:
         'Plataforma de conexão entre produtores rurais e compradores do agronegócio capixaba, com catálogo de produtos e formulário de contato. Stack: React, Tailwind CSS.',
       link_demo: 'https://agro-es-connect.vercel.app/',
+    },
+    {
+      titulo: 'Atual Etiqueta',
+      descricao:
+        'Solução para geração e gerenciamento de etiquetas com impressão direta via browser. Interface objetiva e sem dependências pesadas. Stack: HTML, CSS, JavaScript.',
+      link_demo: 'https://atual-etiqueta.vercel.app/',
+    },
+    {
+      titulo: 'Game Pedra, Papel e Tesoura',
+      descricao:
+        'Jogo interativo com lógica de confronto e contagem de pontos. Explorou manipulação de DOM, eventos e lógica condicional com JavaScript puro.',
+      link_github: 'https://github.com/djcristianosgp/gamer',
+      link_demo: 'https://gamer-ruddy.vercel.app/',
+    },
+    {
+      titulo: 'iViajei',
+      descricao:
+        'App para viagens em grupo com divisão de gastos, checklist colaborativo, lugares, ranking, landing pages e painel administrativo. Stack: React, TypeScript, Vite, Tailwind CSS, Supabase, RLS, SEO e regras de negócio financeiras.',
+      link_demo: 'https://iviajei.vercel.app/',
+    },
+    {
+      titulo: 'Margix',
+      descricao:
+        'Dashboard analítico com visualização de margens e indicadores financeiros. Foco em UX com design system próprio, transições fluidas e layout responsivo. Stack: React, Tailwind CSS.',
+      link_demo: 'https://margix.vercel.app/',
+    },
+    {
+      titulo: 'Modal de Help',
+      descricao:
+        'Componente reutilizável acoplável a qualquer tela, que centraliza documentação em vídeo, áudio e texto, registra histórico de atualizações e oferece canal de feedback ao usuário. Stack: HTML, CSS, JavaScript vanilla.',
+      link_github: 'https://github.com/djcristianosgp/modelo_modal_helper',
+      link_demo: 'https://modelo-modal-helper.vercel.app/',
+    },
+    {
+      titulo: 'QuickSetup',
+      descricao:
+        'CLI visual para acelerar o onboarding técnico de novos ambientes de desenvolvimento, configurando ferramentas e dependências com um único fluxo. Stack: React, TypeScript.',
+      link_demo: 'https://quicksetup.vercel.app/',
+    },
+    {
+      titulo: 'Winget Wizard',
+      descricao:
+        'Ferramenta web para gerar scripts de instalação de pacotes via Windows Package Manager (winget). Stack: React, TypeScript, Vite, Shadcn/UI, Tailwind CSS. Deploy na Vercel com CI via GitHub Actions.',
+      link_github: 'https://github.com/djcristianosgp/winget-wizard',
+      link_demo: 'https://winget-wizard.vercel.app/',
     },
   ],
   prototipos: [
@@ -82,6 +88,17 @@ const portfolioData = {
       descricao:
         'Protótipo de portal de serviços públicos digitais com fluxo de autenticação, solicitações e acompanhamento de processos. Exploração de UX para serviços governamentais. Stack: React, Tailwind CSS.',
       link_demo: 'https://gov-connect-five.vercel.app/',
+    },
+    {
+      titulo: 'Insight Hub',
+      descricao:
+        'Protótipo de frontend corporativo para dashboards e fluxos ERP, com foco em CRUDs complexos, formulários, módulos financeiros e padrões enterprise. Stack: React, TypeScript, UmiJS, Ant Design, ProTable e i18n pt-BR.',
+    },
+    {
+      titulo: 'NetGrid',
+      descricao:
+        'PWA para documentação e visualização de infraestrutura de rede com mapa interativo, importação Omada, modo técnico e testes automatizados. Stack: React 18, TypeScript, Vite, shadcn/ui, Tailwind CSS, Zustand, Zod e Recharts.',
+      link_demo: 'https://netgrid-teal.vercel.app/auth/login',
     },
     {
       titulo: 'Service Hub Pro',

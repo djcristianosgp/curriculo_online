@@ -8,7 +8,15 @@ import portfolioData from './data/portfolioData';
 
 function App() {
   const [previewItem, setPreviewItem] = useState(null);
-  const { conhecimentos, cursos_extras: cursosExtras, experiencias_profissionais: experiencias, formacao, projetos, prototipos, sobre } = portfolioData;
+  const {
+    conhecimentos,
+    cursos_extras: cursosExtras,
+    experiencias_profissionais: experiencias,
+    formacao,
+    projetos,
+    prototipos,
+    sobre,
+  } = portfolioData;
 
   useEffect(() => {
     if (!previewItem) {
@@ -56,6 +64,7 @@ function App() {
         ) : null}
 
         {projetos.length ? <PortfolioGrid title="Projetos Pessoais" items={projetos} delay={200} onPreview={setPreviewItem} /> : null}
+
         {prototipos.length ? <PortfolioGrid title="Protótipos" items={prototipos} delay={260} onPreview={setPreviewItem} /> : null}
 
         {formacao.length ? (
